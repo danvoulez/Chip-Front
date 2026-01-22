@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg-canvas: #0a0a0a;
+  --bg-surface: #141414;
+  --bg-surface-hover: #1e1e1e;
+  --border-proof: #2d2d2d;
+  --text-primary: #f5f5f5;
+  --text-secondary: #9ca3af;
+  --text-tertiary: #4b5563;
+  --accent-verify: #10b981;
+  --accent-proof: #3b82f6;
+  --accent-warn: #f59e0b;
+  --accent-fail: #ef4444;
+  --cid-pill-bg: rgba(59, 130, 246, 0.1);
+  --cid-pill-border: rgba(59, 130, 246, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: Inter, "Geist Sans", system-ui, sans-serif;
+}
+
+[data-mono] {
+  font-family: "JetBrains Mono", "SF Mono", "Roboto Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.cid-pill {
+  background: var(--cid-pill-bg);
+  border: 1px solid var(--cid-pill-border);
+}
